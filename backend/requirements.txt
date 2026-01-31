@@ -1,0 +1,7 @@
+django
+djangorestframework
+gunicorn
+corsheaders
+pillow
+psycopg2-binary
+whitenoise
