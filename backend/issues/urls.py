@@ -1,8 +1,8 @@
 from django.urls import path
-from . import views
+from .views import create_issue, list_issues, update_status
 
 urlpatterns = [
-    path('create/', views.create_issue),
-    path('list/', views.list_issues),
-    path('update/<int:pk>/', views.update_status),
+    path('create/', create_issue),           # POST
+    path('list/', list_issues),             # GET
+    path('update/<int:pk>/', update_status) # PUT
 ]
